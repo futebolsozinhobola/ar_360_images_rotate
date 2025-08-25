@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tour Virtual 360°</title>
+    <meta name="description" content="Uma experiência de tour virtual em 360 graus com A-Frame.">
+    <!-- A-Frame VR Library -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- A cena do A-Frame é onde todo o seu mundo 3D/VR vive. -->
+    <a-scene>
+      <!-- 
+        O <a-sky> é uma esfera gigante com uma imagem mapeada por dentro.
+        
+        IMPORTANTE: O valor do 'src' agora aponta para um arquivo local.
+        1. Coloque sua imagem 360° na mesma pasta que este arquivo index.html.
+        2. Renomeie o valor de 'src' abaixo para ser exatamente o nome do seu arquivo de imagem (ex: "minha-foto.jpg").
+      -->
+      <a-sky 
+        src="sua-imagem-360.jpg"
+        rotation="0 -90 0">
+      </a-sky>
+
+      <!-- 
+        A-Frame adiciona uma câmera por padrão. 
+        Não precisamos adicionar uma, mas se quiséssemos customizá-la, faríamos aqui.
+      -->
+    </a-scene>
+  </body>
+</html>
